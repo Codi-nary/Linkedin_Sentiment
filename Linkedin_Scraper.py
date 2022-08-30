@@ -40,13 +40,13 @@ def container_remove(container):
 
 def linkedin_scraper():
     # login details
-    username = 'navinjain9616@gmail.com'
+    username = '#####@gmail.com'
 
     # keyring.set_password('linkedin')
     # get path to the driver
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
-    browser_get_login('https://www.linkedin.com', 'navinjain9616@gmail.com',
+    browser_get_login('https://www.linkedin.com', username,
                       keyring.get_password('linkedin', username), driver)
     linkedin_post = pd.DataFrame()
 
